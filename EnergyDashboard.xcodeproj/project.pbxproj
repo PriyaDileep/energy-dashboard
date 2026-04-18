@@ -75,6 +75,11 @@
 		99599B932F9328170057F3FF = {
 			isa = PBXGroup;
 			children = (
+				99599C182F9332690057F3FF /* Views */,
+				99599C172F93325A0057F3FF /* Services */,
+				99599C162F9332510057F3FF /* ViewModels */,
+				99599C152F9332490057F3FF /* Models */,
+				99599C142F9332300057F3FF /* App */,
 				99599B9E2F9328170057F3FF /* EnergyDashboard */,
 				99599BAC2F9328180057F3FF /* EnergyDashboardTests */,
 				99599BB62F9328180057F3FF /* EnergyDashboardUITests */,
@@ -90,6 +95,41 @@
 				99599BB32F9328180057F3FF /* EnergyDashboardUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		99599C142F9332300057F3FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		99599C152F9332490057F3FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99599C162F9332510057F3FF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		99599C172F93325A0057F3FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		99599C182F9332690057F3FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
