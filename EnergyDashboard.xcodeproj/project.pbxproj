@@ -35,6 +35,12 @@
 		99599C1D2F943F020057F3FF /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		99599C1E2F9441500057F3FF /* AppTextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextStyles.swift; sourceTree = "<group>"; };
 		99599C1F2F9441EE0057F3FF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		99599C202F9442F10057F3FF /* FuelTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTransaction.swift; sourceTree = "<group>"; };
+		99599C212F94430B0057F3FF /* ChargeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSession.swift; sourceTree = "<group>"; };
+		99599C222F9443190057F3FF /* StoreOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreOffer.swift; sourceTree = "<group>"; };
+		99599C232F9444300057F3FF /* FuelTransaction+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FuelTransaction+Formatting.swift"; sourceTree = "<group>"; };
+		99599C242F9444DA0057F3FF /* ChargeSession+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChargeSession+Formatting.swift"; sourceTree = "<group>"; };
+		99599C252F9447750057F3FF /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -118,6 +124,12 @@
 		99599C152F9332490057F3FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				99599C252F9447750057F3FF /* ViewState.swift */,
+				99599C242F9444DA0057F3FF /* ChargeSession+Formatting.swift */,
+				99599C232F9444300057F3FF /* FuelTransaction+Formatting.swift */,
+				99599C222F9443190057F3FF /* StoreOffer.swift */,
+				99599C212F94430B0057F3FF /* ChargeSession.swift */,
+				99599C202F9442F10057F3FF /* FuelTransaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
