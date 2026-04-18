@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": "C3D4E5F6-0001-0001-0001-000000000001",
+    "tag": "For you",
+    "title": "4¢/L off fuel",
+    "subtitle": "Scan to redeem at any station",
+    "systemImageName": "fuelpump.fill",
+    "expiryDate": "2026-05-31T23:59:00+10:00"
+  },
+  {
+    "id": "C3D4E5F6-0002-0002-0002-000000000002",
+    "tag": "Limited time",
+    "title": "Free coffee with fill-up",
+    "subtitle": "Any fill over 20L unlocks a regular coffee",
+    "systemImageName": "cup.and.saucer.fill",
+    "expiryDate": "2026-04-30T23:59:00+10:00"
+  },
+  {
+    "id": "C3D4E5F6-0003-0003-0003-000000000003",
+    "tag": "Member exclusive",
+    "title": "Double rewards on charging",
+    "subtitle": "Earn 2x points on every EV session this month",
+    "systemImageName": "bolt.fill",
+    "expiryDate": "2026-04-30T23:59:00+10:00"
+  }
+]

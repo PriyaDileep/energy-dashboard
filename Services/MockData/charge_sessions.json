@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "B2C3D4E5-0001-0001-0001-000000000001",
+    "locationName": "Milton DC Hub",
+    "bayIdentifier": "Bay 2",
+    "address": "45 Cribb St, Milton QLD 4064",
+    "date": "2026-04-17T09:23:00+10:00",
+    "totalCost": 0.00,
+    "durationMinutes": 18,
+    "energyKWh": 14.8,
+    "chargeRateKW": 50.0,
+    "discount": 1.48,
+    "isActive": true,
+    "batteryPercentage": 72,
+    "startingBatteryPercentage": 54,
+    "targetBatteryPercentage": 90
+  },
+  {
+    "id": "B2C3D4E5-0002-0002-0002-000000000002",
+    "locationName": "South Bank EV Bays",
+    "bayIdentifier": "Bay 5",
+    "address": "Stanley St Plaza, South Bank QLD 4101",
+    "date": "2026-04-13T14:10:00+10:00",
+    "totalCost": 14.60,
+    "durationMinutes": 130,
+    "energyKWh": 48.2,
+    "chargeRateKW": 22.0,
+    "discount": 2.10,
+    "isActive": false,
+    "batteryPercentage": null,
+    "startingBatteryPercentage": null,
+    "targetBatteryPercentage": null
+  },
+  {
+    "id": "B2C3D4E5-0003-0003-0003-000000000003",
+    "locationName": "Toowong Village Car Park",
+    "bayIdentifier": "Bay 1",
+    "address": "9 Sherwood Rd, Toowong QLD 4066",
+    "date": "2026-04-08T10:00:00+10:00",
+    "totalCost": 8.20,
+    "durationMinutes": 65,
+    "energyKWh": 27.3,
+    "chargeRateKW": 25.0,
+    "discount": 0.00,
+    "isActive": false,
+    "batteryPercentage": null,
+    "startingBatteryPercentage": null,
+    "targetBatteryPercentage": null
+  }
+]

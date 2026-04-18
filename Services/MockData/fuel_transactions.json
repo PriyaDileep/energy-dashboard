@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "A1B2C3D4-0001-0001-0001-000000000001",
+    "stationSuburb": "Newstead",
+    "date": "2026-04-17T07:42:00+10:00",
+    "totalCost": 47.86,
+    "totalAtPump": 49.10,
+    "litres": 30.98,
+    "fuelType": "Unleaded",
+    "pumpNumber": 4,
+    "savingsNote": "4¢/L Everyday Rewards fuel saving applied",
+    "paymentMethod": "Paid with Visa"
+  },
+  {
+    "id": "A1B2C3D4-0002-0002-0002-000000000002",
+    "stationSuburb": "Fortitude Valley",
+    "date": "2026-04-14T08:15:00+10:00",
+    "totalCost": 62.15,
+    "totalAtPump": 64.20,
+    "litres": 32.70,
+    "fuelType": "E10",
+    "pumpNumber": 2,
+    "savingsNote": null,
+    "paymentMethod": "Paid with Visa"
+  },
+  {
+    "id": "A1B2C3D4-0003-0003-0003-000000000003",
+    "stationSuburb": "Milton",
+    "date": "2026-04-07T17:30:00+10:00",
+    "totalCost": 91.20,
+    "totalAtPump": 95.04,
+    "litres": 43.62,
+    "fuelType": "Unleaded 98",
+    "pumpNumber": 7,
+    "savingsNote": "4¢/L Everyday Rewards fuel saving applied",
+    "paymentMethod": "Paid with Visa"
+  },
+  {
+    "id": "A1B2C3D4-0004-0004-0004-000000000004",
+    "stationSuburb": "South Brisbane",
+    "date": "2026-03-28T12:05:00+10:00",
+    "totalCost": 44.13,
+    "totalAtPump": 44.13,
+    "litres": 20.06,
+    "fuelType": "Unleaded",
+    "pumpNumber": 1,
+    "savingsNote": null,
+    "paymentMethod": "Paid with Apple Pay"
+  }
+]
