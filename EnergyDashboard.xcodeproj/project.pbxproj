@@ -32,6 +32,9 @@
 		99599B9F2F9328170057F3FF /* EnergyDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyDashboardApp.swift; sourceTree = "<group>"; };
 		99599BA92F9328180057F3FF /* EnergyDashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyDashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99599BB32F9328180057F3FF /* EnergyDashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyDashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99599C1D2F943F020057F3FF /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		99599C1E2F9441500057F3FF /* AppTextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextStyles.swift; sourceTree = "<group>"; };
+		99599C1F2F9441EE0057F3FF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -143,6 +146,8 @@
 		99599C1B2F943D7E0057F3FF /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				99599C1E2F9441500057F3FF /* AppTextStyles.swift */,
+				99599C1D2F943F020057F3FF /* AppColors.swift */,
 			);
 			path = ToolBox;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		99599C1C2F943DD70057F3FF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				99599C1F2F9441EE0057F3FF /* AppConstants.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
