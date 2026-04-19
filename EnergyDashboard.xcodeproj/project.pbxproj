@@ -36,6 +36,14 @@
 		99599C6B2F94C84C0057F3FF /* InfoBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C6A2F94C84C0057F3FF /* InfoBadgeView.swift */; };
 		99599C6D2F94C8E80057F3FF /* DateTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C6C2F94C8E80057F3FF /* DateTileView.swift */; };
 		99599C6F2F94CA1A0057F3FF /* SeeAllButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C6E2F94CA1A0057F3FF /* SeeAllButton.swift */; };
+		99599C722F94CBBF0057F3FF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C712F94CBBF0057F3FF /* DashboardView.swift */; };
+		99599C742F94D2F70057F3FF /* FuelTransactionsModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C732F94D2F70057F3FF /* FuelTransactionsModuleView.swift */; };
+		99599C762F94D51B0057F3FF /* FuelTransactionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C752F94D51B0057F3FF /* FuelTransactionRowView.swift */; };
+		99599C782F94D6970057F3FF /* FuelTransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C772F94D6970057F3FF /* FuelTransactionDetailView.swift */; };
+		99599C7A2F94D7E60057F3FF /* ChargeSessionsModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C792F94D7E60057F3FF /* ChargeSessionsModuleView.swift */; };
+		99599C7C2F94D8E30057F3FF /* ChargeSessionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C7B2F94D8E30057F3FF /* ChargeSessionRowView.swift */; };
+		99599C7E2F94D9D80057F3FF /* ChargeSessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C7D2F94D9D80057F3FF /* ChargeSessionDetailView.swift */; };
+		99599C802F94DA980057F3FF /* StoreOffersModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C7F2F94DA980057F3FF /* StoreOffersModuleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +96,14 @@
 		99599C6A2F94C84C0057F3FF /* InfoBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBadgeView.swift; sourceTree = "<group>"; };
 		99599C6C2F94C8E80057F3FF /* DateTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTileView.swift; sourceTree = "<group>"; };
 		99599C6E2F94CA1A0057F3FF /* SeeAllButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllButton.swift; sourceTree = "<group>"; };
+		99599C712F94CBBF0057F3FF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		99599C732F94D2F70057F3FF /* FuelTransactionsModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTransactionsModuleView.swift; sourceTree = "<group>"; };
+		99599C752F94D51B0057F3FF /* FuelTransactionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTransactionRowView.swift; sourceTree = "<group>"; };
+		99599C772F94D6970057F3FF /* FuelTransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTransactionDetailView.swift; sourceTree = "<group>"; };
+		99599C792F94D7E60057F3FF /* ChargeSessionsModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionsModuleView.swift; sourceTree = "<group>"; };
+		99599C7B2F94D8E30057F3FF /* ChargeSessionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionRowView.swift; sourceTree = "<group>"; };
+		99599C7D2F94D9D80057F3FF /* ChargeSessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionDetailView.swift; sourceTree = "<group>"; };
+		99599C7F2F94DA980057F3FF /* StoreOffersModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreOffersModuleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -207,6 +223,14 @@
 		99599C182F9332690057F3FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				99599C712F94CBBF0057F3FF /* DashboardView.swift */,
+				99599C732F94D2F70057F3FF /* FuelTransactionsModuleView.swift */,
+				99599C752F94D51B0057F3FF /* FuelTransactionRowView.swift */,
+				99599C772F94D6970057F3FF /* FuelTransactionDetailView.swift */,
+				99599C792F94D7E60057F3FF /* ChargeSessionsModuleView.swift */,
+				99599C7B2F94D8E30057F3FF /* ChargeSessionRowView.swift */,
+				99599C7D2F94D9D80057F3FF /* ChargeSessionDetailView.swift */,
+				99599C7F2F94DA980057F3FF /* StoreOffersModuleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,11 +467,14 @@
 			files = (
 				99599C3F2F9450380057F3FF /* StoreOffer.swift in Sources */,
 				99599C502F94599B0057F3FF /* FuelTransactionsViewModel.swift in Sources */,
+				99599C7C2F94D8E30057F3FF /* ChargeSessionRowView.swift in Sources */,
 				99599C402F94503D0057F3FF /* FuelTransaction+Formatting.swift in Sources */,
 				99599C362F944E860057F3FF /* JSONMockLoader.swift in Sources */,
 				99599C632F9466410057F3FF /* ModuleCardView.swift in Sources */,
 				99599C3D2F94502D0057F3FF /* FuelTransaction.swift in Sources */,
+				99599C802F94DA980057F3FF /* StoreOffersModuleView.swift in Sources */,
 				99599C4C2F94540C0057F3FF /* ViewModelFactory.swift in Sources */,
+				99599C782F94D6970057F3FF /* FuelTransactionDetailView.swift in Sources */,
 				99599C582F945C5C0057F3FF /* StoreOffersViewModel.swift in Sources */,
 				99599C4A2F94530A0057F3FF /* ServiceFactory.swift in Sources */,
 				99599C6F2F94CA1A0057F3FF /* SeeAllButton.swift in Sources */,
@@ -456,13 +483,18 @@
 				99599C3B2F9450050057F3FF /* DemoDataService.swift in Sources */,
 				99599C522F945B160057F3FF /* ChargeSessionsViewModel.swift in Sources */,
 				99599C6D2F94C8E80057F3FF /* DateTileView.swift in Sources */,
+				99599C762F94D51B0057F3FF /* FuelTransactionRowView.swift in Sources */,
 				99599C382F944F040057F3FF /* ViewState.swift in Sources */,
+				99599C722F94CBBF0057F3FF /* DashboardView.swift in Sources */,
 				99599C6B2F94C84C0057F3FF /* InfoBadgeView.swift in Sources */,
 				99599C642F94679A0057F3FF /* AppColors.swift in Sources */,
 				99599C3C2F94501D0057F3FF /* DataServiceProtocol.swift in Sources */,
+				99599C7E2F94D9D80057F3FF /* ChargeSessionDetailView.swift in Sources */,
 				99599C442F9450900057F3FF /* DefaultDataService.swift in Sources */,
 				99599BA02F9328170057F3FF /* EnergyDashboardApp.swift in Sources */,
+				99599C742F94D2F70057F3FF /* FuelTransactionsModuleView.swift in Sources */,
 				99599C412F9450430057F3FF /* ChargeSession+Formatting.swift in Sources */,
+				99599C7A2F94D7E60057F3FF /* ChargeSessionsModuleView.swift in Sources */,
 				99599C372F944EEA0057F3FF /* AppConstants.swift in Sources */,
 				99599C672F94694E0057F3FF /* ViewStateView.swift in Sources */,
 				99599C652F94680A0057F3FF /* AppTextStyles.swift in Sources */,

@@ -21,12 +21,7 @@ struct EnergyDashboardApp: App {
     
     var body: some Scene {
         WindowGroup {
-            
-            // DashboardView(viewModel: viewModelFactory.makeDashboardViewModel())
-            
-            Text("EnergyDashboard — Phase 5 complete")
-                .font(.headline)
-                .foregroundStyle(.secondary)
+            DashboardView(viewModel: viewModelFactory.makeDashboardViewModel())
         }
     }
     
