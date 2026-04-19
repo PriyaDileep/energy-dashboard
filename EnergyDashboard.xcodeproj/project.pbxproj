@@ -25,6 +25,10 @@
 		99599C472F94514E0057F3FF /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C462F9451480057F3FF /* MockDataService.swift */; };
 		99599C4A2F94530A0057F3FF /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C492F9453000057F3FF /* ServiceFactory.swift */; };
 		99599C4C2F94540C0057F3FF /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C4B2F9454090057F3FF /* ViewModelFactory.swift */; };
+		99599C4E2F9457300057F3FF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C4D2F9457300057F3FF /* DashboardViewModel.swift */; };
+		99599C502F94599B0057F3FF /* FuelTransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C4F2F9459970057F3FF /* FuelTransactionsViewModel.swift */; };
+		99599C522F945B160057F3FF /* ChargeSessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C512F945B110057F3FF /* ChargeSessionsViewModel.swift */; };
+		99599C582F945C5C0057F3FF /* StoreOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C572F945C5C0057F3FF /* StoreOffersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		99599C462F9451480057F3FF /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
 		99599C492F9453000057F3FF /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		99599C4B2F9454090057F3FF /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		99599C4D2F9457300057F3FF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		99599C4F2F9459970057F3FF /* FuelTransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTransactionsViewModel.swift; sourceTree = "<group>"; };
+		99599C512F945B110057F3FF /* ChargeSessionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionsViewModel.swift; sourceTree = "<group>"; };
+		99599C572F945C5C0057F3FF /* StoreOffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreOffersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -164,6 +172,10 @@
 		99599C162F9332510057F3FF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				99599C572F945C5C0057F3FF /* StoreOffersViewModel.swift */,
+				99599C512F945B110057F3FF /* ChargeSessionsViewModel.swift */,
+				99599C4F2F9459970057F3FF /* FuelTransactionsViewModel.swift */,
+				99599C4D2F9457300057F3FF /* DashboardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -405,13 +417,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				99599C3F2F9450380057F3FF /* StoreOffer.swift in Sources */,
+				99599C502F94599B0057F3FF /* FuelTransactionsViewModel.swift in Sources */,
 				99599C402F94503D0057F3FF /* FuelTransaction+Formatting.swift in Sources */,
 				99599C362F944E860057F3FF /* JSONMockLoader.swift in Sources */,
 				99599C3D2F94502D0057F3FF /* FuelTransaction.swift in Sources */,
 				99599C4C2F94540C0057F3FF /* ViewModelFactory.swift in Sources */,
+				99599C582F945C5C0057F3FF /* StoreOffersViewModel.swift in Sources */,
 				99599C4A2F94530A0057F3FF /* ServiceFactory.swift in Sources */,
 				99599C472F94514E0057F3FF /* MockDataService.swift in Sources */,
+				99599C4E2F9457300057F3FF /* DashboardViewModel.swift in Sources */,
 				99599C3B2F9450050057F3FF /* DemoDataService.swift in Sources */,
+				99599C522F945B160057F3FF /* ChargeSessionsViewModel.swift in Sources */,
 				99599C382F944F040057F3FF /* ViewState.swift in Sources */,
 				99599C3C2F94501D0057F3FF /* DataServiceProtocol.swift in Sources */,
 				99599C442F9450900057F3FF /* DefaultDataService.swift in Sources */,

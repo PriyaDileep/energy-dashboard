@@ -22,20 +22,20 @@ final class ViewModelFactory {
 
     // MARK: - View model creation
 
-//    func makeDashboardViewModel() -> DashboardViewModel {
-//        DashboardViewModel(dataService: dataService)
-//    }
-//
-//    func makeFuelTransactionsViewModel() -> FuelTransactionsViewModel {
-//        FuelTransactionsViewModel(dataService: dataService)
-//    }
-//
-//    func makeChargeSessionsViewModel() -> ChargeSessionsViewModel {
-//        ChargeSessionsViewModel(dataService: dataService)
-//    }
-//
-//    func makeStoreOffersViewModel() -> StoreOffersViewModel {
-//        StoreOffersViewModel(dataService: dataService)
-//    }
-//    
+    func makeDashboardViewModel() -> DashboardViewModel {
+        DashboardViewModel(dataService: dataService)
+    }
+
+    func makeFuelTransactionsViewModel() -> FuelTransactionsViewModel {
+        FuelTransactionsViewModel(dataService: dataService)
+    }
+
+    func makeChargeSessionsViewModel() -> ChargeSessionsViewModel {
+        ChargeSessionsViewModel(dataService: dataService)
+    }
+
+    func makeStoreOffersViewModel() -> StoreOffersViewModel {
+        StoreOffersViewModel(dataService: dataService)
+    }
+    
 }
