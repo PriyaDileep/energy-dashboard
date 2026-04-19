@@ -19,18 +19,18 @@ final class DashboardViewModelTests: XCTestCase {
     // MARK: - Properties
 
     private var mockService: MockDataService!
-    private var sut: DashboardViewModel!
+    private var testSubject: DashboardViewModel!
 
     // MARK: - Lifecycle
 
     override func setUp() {
         super.setUp()
         mockService = MockDataService()
-        sut = DashboardViewModel(dataService: mockService)
+        testSubject = DashboardViewModel(dataService: mockService)
     }
 
     override func tearDown() {
-        sut = nil
+        testSubject = nil
         mockService = nil
         super.tearDown()
     }
@@ -41,9 +41,9 @@ final class DashboardViewModelTests: XCTestCase {
         // Given a freshly initialised view model
 
         // Then all three state streams should be idle
-        XCTAssertEqual(sut.fuelState.debugDescription, ViewState<[FuelTransaction]>.idle.debugDescription)
-        XCTAssertEqual(sut.chargeState.debugDescription, ViewState<[ChargeSession]>.idle.debugDescription)
-        XCTAssertEqual(sut.offersState.debugDescription, ViewState<[StoreOffer]>.idle.debugDescription)
+        XCTAssertEqual(testSubject.fuelState.debugDescription, ViewState<[FuelTransaction]>.idle.debugDescription)
+        XCTAssertEqual(testSubject.chargeState.debugDescription, ViewState<[ChargeSession]>.idle.debugDescription)
+        XCTAssertEqual(testSubject.offersState.debugDescription, ViewState<[StoreOffer]>.idle.debugDescription)
     }
 
     // MARK: - Success path
@@ -55,20 +55,20 @@ final class DashboardViewModelTests: XCTestCase {
         mockService.stubbedOffers = [.fixture()]
 
         // When load is invoked
-        await sut.load()
+        await testSubject.load()
 
         // Then all three streams should be in the loaded state
-        guard case .success(let transactions) = sut.fuelState else {
+        guard case .success(let transactions) = testSubject.fuelState else {
             return XCTFail("Expected fuelState to be .loaded")
         }
         XCTAssertEqual(transactions.count, 1)
 
-        guard case .success(let sessions) = sut.chargeState else {
+        guard case .success(let sessions) = testSubject.chargeState else {
             return XCTFail("Expected chargeState to be .loaded")
         }
         XCTAssertEqual(sessions.count, 1)
 
-        guard case .success(let offers) = sut.offersState else {
+        guard case .success(let offers) = testSubject.offersState else {
             return XCTFail("Expected offersState to be .loaded")
         }
         XCTAssertEqual(offers.count, 1)
@@ -81,7 +81,7 @@ final class DashboardViewModelTests: XCTestCase {
         mockService.stubbedOffers = []
 
         // When load is invoked
-        await sut.load()
+        await testSubject.load()
 
         // Then each service method should have been called exactly once
         XCTAssertEqual(mockService.getFuelTransactionsCallCount, 1)
@@ -96,16 +96,16 @@ final class DashboardViewModelTests: XCTestCase {
         mockService.shouldThrow = true
 
         // When load is invoked
-        await sut.load()
+        await testSubject.load()
 
         // Then all three streams should be in the error state
-        if case .error = sut.fuelState {} else {
+        if case .error = testSubject.fuelState {} else {
             XCTFail("Expected fuelState to be .error")
         }
-        if case .error = sut.chargeState {} else {
+        if case .error = testSubject.chargeState {} else {
             XCTFail("Expected chargeState to be .error")
         }
-        if case .error = sut.offersState {} else {
+        if case .error = testSubject.offersState {} else {
             XCTFail("Expected offersState to be .error")
         }
     }
@@ -122,10 +122,10 @@ final class DashboardViewModelTests: XCTestCase {
         ]
 
         // When load completes
-        await sut.load()
+        await testSubject.load()
 
         // Then the dashboard should expose only the first two
-        XCTAssertEqual(sut.recentFuelTransactions.count, AppConstants.Behaviour.dashboardPreviewCount)
+        XCTAssertEqual(testSubject.recentFuelTransactions.count, AppConstants.Behaviour.dashboardPreviewCount)
     }
 
     func test_activeSession_whenOneSessionIsActive_returnsThatSession() async {
@@ -138,10 +138,10 @@ final class DashboardViewModelTests: XCTestCase {
         ]
 
         // When load completes
-        await sut.load()
+        await testSubject.load()
 
         // Then activeSession returns the one that is active
-        XCTAssertEqual(sut.activeSession?.id, activeId)
+        XCTAssertEqual(testSubject.activeSession?.id, activeId)
     }
 
     func test_activeSession_whenNoSessionIsActive_returnsNil() async {
@@ -152,10 +152,10 @@ final class DashboardViewModelTests: XCTestCase {
         ]
 
         // When load completes
-        await sut.load()
+        await testSubject.load()
 
         // Then activeSession is nil
-        XCTAssertNil(sut.activeSession)
+        XCTAssertNil(testSubject.activeSession)
     }
 
     func test_featuredOffer_returnsTheFirstOffer() async {
@@ -168,10 +168,10 @@ final class DashboardViewModelTests: XCTestCase {
         ]
 
         // When load completes
-        await sut.load()
+        await testSubject.load()
 
         // Then featuredOffer is the first one
-        XCTAssertEqual(sut.featuredOffer?.id, firstId)
+        XCTAssertEqual(testSubject.featuredOffer?.id, firstId)
     }
 
     // MARK: - Loading state
@@ -183,8 +183,8 @@ final class DashboardViewModelTests: XCTestCase {
         mockService.stubbedOffers = [.fixture()]
 
         // When load is called twice
-        await sut.load()
-        await sut.load()
+        await testSubject.load()
+        await testSubject.load()
 
         // Then each service method should have been called twice
         XCTAssertEqual(mockService.getFuelTransactionsCallCount, 2)
@@ -199,7 +199,7 @@ final class DashboardViewModelTests: XCTestCase {
         mockService.stubbedOffers = [.fixture()]
 
         // When refresh is invoked
-        await sut.refresh()
+        await testSubject.refresh()
 
         // Then each service method should have been called once (same as load)
         XCTAssertEqual(mockService.getFuelTransactionsCallCount, 1)
