@@ -13,12 +13,10 @@ final class ChargeSessionsViewModel: ObservableObject {
 
     // MARK: - State
 
-    // The full list of charge sessions, active and completed.
     @Published var state: ViewState<[ChargeSession]> = .idle
 
     // MARK: - Derived state
 
-    // The currently-active charging session, if one exists.
     var activeSession: ChargeSession? {
         guard case .success(let sessions) = state else { return nil }
         return sessions.first(where: { $0.isActive })

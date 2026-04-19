@@ -9,6 +9,12 @@ import Foundation
 
 extension ChargeSession {
 
+    private static let fullDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE d MMMM yyyy 'at' h:mm a zzz"
+        return formatter
+    }()
+    
     // MARK: - Currency
 
     var formattedCost: String {
@@ -57,9 +63,7 @@ extension ChargeSession {
     }
 
     var fullFormattedDate: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE d MMMM yyyy 'at' h:mm a zzz"
-        return dateFormatter.string(from: date)
+        Self.fullDateFormatter.string(from: date)
     }
 
     var sessionTimeDescription: String {

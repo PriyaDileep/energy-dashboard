@@ -50,10 +50,6 @@ struct ChargeSessionsModuleView: View {
             }
 
             Spacer()
-
-            if activeSession != nil {
-                liveBadge
-            }
         }
     }
 
@@ -66,24 +62,6 @@ struct ChargeSessionsModuleView: View {
                     .font(.system(size: 15, weight: .medium))
                     .foregroundStyle(AppColors.chargeAccent)
             )
-    }
-
-    private var liveBadge: some View {
-        HStack(spacing: 5) {
-            Circle()
-                .fill(AppColors.chargeAccent)
-                .frame(width: 6, height: 6)
-                .modifier(PulsingModifier())
-
-            Text(AppConstants.Strings.liveBadge)
-                .font(.system(size: 10, weight: .bold))
-                .tracking(0.5)
-                .foregroundStyle(AppColors.chargeAccent)
-        }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 4)
-        .background(AppColors.chargeAccentBackground, in: Capsule())
-        .accessibilityLabel("Live charging session in progress")
     }
 
     private var sessionRows: some View {
@@ -116,19 +94,5 @@ struct ChargeSessionsModuleView: View {
                 }
         }
         .buttonStyle(.plain)
-    }
-}
-
-private struct PulsingModifier: ViewModifier {
-    @State private var isPulsing = false
-
-    func body(content: Content) -> some View {
-        content
-            .opacity(isPulsing ? 0.3 : 1.0)
-            .animation(
-                .easeInOut(duration: 0.7).repeatForever(autoreverses: true),
-                value: isPulsing
-            )
-            .onAppear { isPulsing = true }
     }
 }

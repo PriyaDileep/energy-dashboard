@@ -8,6 +8,12 @@
 import Foundation
 
 extension FuelTransaction {
+    
+    private static let fullDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE d MMMM yyyy 'at' h:mm a zzz"
+        return formatter
+    }()
 
     // MARK: - Currency
     
@@ -38,11 +44,9 @@ extension FuelTransaction {
     var formattedTime: String {
         date.formatted(date: .omitted, time: .shortened)
     }
-
+    
     var fullFormattedDate: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE d MMMM yyyy 'at' h:mm a zzz"
-        return dateFormatter.string(from: date)
+        Self.fullDateFormatter.string(from: date)
     }
 
     // MARK: - Computed state

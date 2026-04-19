@@ -11,12 +11,11 @@ import SwiftUI
 struct EnergyDashboardApp: App {
     
     // To switch to production, change .demo to .live
-    @State private var viewModelFactory: ViewModelFactory
+    private let viewModelFactory: ViewModelFactory
     
     init() {
         let dataService = ServiceFactory.makeDataService(for: .demo)
-        let factory = ViewModelFactory(dataService: dataService)
-        _viewModelFactory = State(wrappedValue: factory)
+        self.viewModelFactory = ViewModelFactory(dataService: dataService)
     }
     
     var body: some Scene {

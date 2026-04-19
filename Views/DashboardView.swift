@@ -71,10 +71,6 @@ struct DashboardView: View {
                 Text(AppConstants.Strings.fuelSectionTitle)
                     .sectionTitleStyle()
                 Spacer()
-                SeeAllButton {
-                    // Navigation to full fuel list — out of scope for this submission,
-                    // wiring would be: path.append(FuelTransactionsListDestination.self)
-                }
             }
 
             FuelTransactionsModuleView(
@@ -92,7 +88,6 @@ struct DashboardView: View {
                 Text(AppConstants.Strings.chargeSectionTitle)
                     .sectionTitleStyle()
                 Spacer()
-                SeeAllButton { }
             }
 
             ChargeSessionsModuleView(
@@ -111,7 +106,6 @@ struct DashboardView: View {
                 Text(AppConstants.Strings.offersSectionTitle)
                     .sectionTitleStyle()
                 Spacer()
-                SeeAllButton { }
             }
 
             StoreOffersModuleView(

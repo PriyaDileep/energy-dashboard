@@ -57,12 +57,10 @@ enum AppConstants {
         static let fuelModuleSubtitle = "Last 30 days"
         static let chargeModuleSubtitle = "Last 30 days"
 
-        static let seeAll = "See all"
         static let viewAllTransactions = "View all transactions"
         static let viewAllSessions = "View all sessions"
 
         static let liveSession = "LIVE SESSION"
-        static let liveBadge = "LIVE"
         static let inProgress = "In progress"
 
         static let paymentSummary = "Payment summary"
