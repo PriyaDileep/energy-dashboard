@@ -29,6 +29,13 @@
 		99599C502F94599B0057F3FF /* FuelTransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C4F2F9459970057F3FF /* FuelTransactionsViewModel.swift */; };
 		99599C522F945B160057F3FF /* ChargeSessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C512F945B110057F3FF /* ChargeSessionsViewModel.swift */; };
 		99599C582F945C5C0057F3FF /* StoreOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C572F945C5C0057F3FF /* StoreOffersViewModel.swift */; };
+		99599C632F9466410057F3FF /* ModuleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C622F9466410057F3FF /* ModuleCardView.swift */; };
+		99599C642F94679A0057F3FF /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C1D2F943F020057F3FF /* AppColors.swift */; };
+		99599C652F94680A0057F3FF /* AppTextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C1E2F9441500057F3FF /* AppTextStyles.swift */; };
+		99599C672F94694E0057F3FF /* ViewStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C662F94694B0057F3FF /* ViewStateView.swift */; };
+		99599C6B2F94C84C0057F3FF /* InfoBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C6A2F94C84C0057F3FF /* InfoBadgeView.swift */; };
+		99599C6D2F94C8E80057F3FF /* DateTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C6C2F94C8E80057F3FF /* DateTileView.swift */; };
+		99599C6F2F94CA1A0057F3FF /* SeeAllButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C6E2F94CA1A0057F3FF /* SeeAllButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +83,11 @@
 		99599C4F2F9459970057F3FF /* FuelTransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTransactionsViewModel.swift; sourceTree = "<group>"; };
 		99599C512F945B110057F3FF /* ChargeSessionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionsViewModel.swift; sourceTree = "<group>"; };
 		99599C572F945C5C0057F3FF /* StoreOffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreOffersViewModel.swift; sourceTree = "<group>"; };
+		99599C622F9466410057F3FF /* ModuleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCardView.swift; sourceTree = "<group>"; };
+		99599C662F94694B0057F3FF /* ViewStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateView.swift; sourceTree = "<group>"; };
+		99599C6A2F94C84C0057F3FF /* InfoBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBadgeView.swift; sourceTree = "<group>"; };
+		99599C6C2F94C8E80057F3FF /* DateTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTileView.swift; sourceTree = "<group>"; };
+		99599C6E2F94CA1A0057F3FF /* SeeAllButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -202,6 +214,7 @@
 		99599C1B2F943D7E0057F3FF /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				99599C612F9466280057F3FF /* Components */,
 				99599C1E2F9441500057F3FF /* AppTextStyles.swift */,
 				99599C1D2F943F020057F3FF /* AppColors.swift */,
 			);
@@ -267,6 +280,18 @@
 				99599C492F9453000057F3FF /* ServiceFactory.swift */,
 			);
 			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		99599C612F9466280057F3FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				99599C662F94694B0057F3FF /* ViewStateView.swift */,
+				99599C622F9466410057F3FF /* ModuleCardView.swift */,
+				99599C6A2F94C84C0057F3FF /* InfoBadgeView.swift */,
+				99599C6C2F94C8E80057F3FF /* DateTileView.swift */,
+				99599C6E2F94CA1A0057F3FF /* SeeAllButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,20 +445,27 @@
 				99599C502F94599B0057F3FF /* FuelTransactionsViewModel.swift in Sources */,
 				99599C402F94503D0057F3FF /* FuelTransaction+Formatting.swift in Sources */,
 				99599C362F944E860057F3FF /* JSONMockLoader.swift in Sources */,
+				99599C632F9466410057F3FF /* ModuleCardView.swift in Sources */,
 				99599C3D2F94502D0057F3FF /* FuelTransaction.swift in Sources */,
 				99599C4C2F94540C0057F3FF /* ViewModelFactory.swift in Sources */,
 				99599C582F945C5C0057F3FF /* StoreOffersViewModel.swift in Sources */,
 				99599C4A2F94530A0057F3FF /* ServiceFactory.swift in Sources */,
+				99599C6F2F94CA1A0057F3FF /* SeeAllButton.swift in Sources */,
 				99599C472F94514E0057F3FF /* MockDataService.swift in Sources */,
 				99599C4E2F9457300057F3FF /* DashboardViewModel.swift in Sources */,
 				99599C3B2F9450050057F3FF /* DemoDataService.swift in Sources */,
 				99599C522F945B160057F3FF /* ChargeSessionsViewModel.swift in Sources */,
+				99599C6D2F94C8E80057F3FF /* DateTileView.swift in Sources */,
 				99599C382F944F040057F3FF /* ViewState.swift in Sources */,
+				99599C6B2F94C84C0057F3FF /* InfoBadgeView.swift in Sources */,
+				99599C642F94679A0057F3FF /* AppColors.swift in Sources */,
 				99599C3C2F94501D0057F3FF /* DataServiceProtocol.swift in Sources */,
 				99599C442F9450900057F3FF /* DefaultDataService.swift in Sources */,
 				99599BA02F9328170057F3FF /* EnergyDashboardApp.swift in Sources */,
 				99599C412F9450430057F3FF /* ChargeSession+Formatting.swift in Sources */,
 				99599C372F944EEA0057F3FF /* AppConstants.swift in Sources */,
+				99599C672F94694E0057F3FF /* ViewStateView.swift in Sources */,
+				99599C652F94680A0057F3FF /* AppTextStyles.swift in Sources */,
 				99599C3E2F9450330057F3FF /* ChargeSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
