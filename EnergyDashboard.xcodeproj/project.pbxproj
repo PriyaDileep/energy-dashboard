@@ -44,6 +44,9 @@
 		99599C7C2F94D8E30057F3FF /* ChargeSessionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C7B2F94D8E30057F3FF /* ChargeSessionRowView.swift */; };
 		99599C7E2F94D9D80057F3FF /* ChargeSessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C7D2F94D9D80057F3FF /* ChargeSessionDetailView.swift */; };
 		99599C802F94DA980057F3FF /* StoreOffersModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C7F2F94DA980057F3FF /* StoreOffersModuleView.swift */; };
+		99599C812F94E7E30057F3FF /* fuel_transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 99599C2F2F944D970057F3FF /* fuel_transactions.json */; };
+		99599C822F94E7E80057F3FF /* charge_sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 99599C312F944DBD0057F3FF /* charge_sessions.json */; };
+		99599C832F94E7ED0057F3FF /* store_offers.json in Resources */ = {isa = PBXBuildFile; fileRef = 99599C332F944DDC0057F3FF /* store_offers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -448,6 +451,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99599C822F94E7E80057F3FF /* charge_sessions.json in Resources */,
+				99599C812F94E7E30057F3FF /* fuel_transactions.json in Resources */,
+				99599C832F94E7ED0057F3FF /* store_offers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
