@@ -1,6 +1,6 @@
 # Energy Dashboard
 
-A minimal iOS dashboard that combines fuel transactions and EV charging sessions into a single unified experience — submitted as a technical take-home exercise.
+A minimal iOS dashboard that combines fuel transactions and EV charging sessions into a single unified experience submitted as a technical take-home exercise.
 
 ---
 
@@ -13,4 +13,4 @@ A minimal iOS dashboard that combines fuel transactions and EV charging sessions
 
 **Minimum iOS version:** 17.0
 
-No external dependencies — no Swift Package Manager packages, no CocoaPods, no third-party libraries. The project builds directly after cloning.
+No external dependencies, no Swift Package Manager packages, no CocoaPods, no third-party libraries. The project builds directly after cloning.
