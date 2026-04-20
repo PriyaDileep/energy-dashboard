@@ -73,33 +73,3 @@ struct InfoBadgeView: View {
     }
 }
 
-// MARK: - Previews
-
-#Preview("Charge session badges") {
-    HStack(spacing: 6) {
-        InfoBadgeView("50 kW", systemImageName: "bolt.fill", style: .charge)
-        InfoBadgeView("72%", systemImageName: "battery.75percent", style: .positive)
-        InfoBadgeView("18 min", systemImageName: "clock")
-    }
-    .padding()
-}
-
-#Preview("Detail view badges") {
-    VStack(alignment: .leading, spacing: 8) {
-        InfoBadgeView("Unleaded · Pump 4", systemImageName: "fuelpump.fill")
-        InfoBadgeView("+ Add note", style: .charge)
-        InfoBadgeView("LIVE", style: .positive)
-    }
-    .padding()
-}
-
-#Preview("All styles") {
-    VStack(alignment: .leading, spacing: 8) {
-        InfoBadgeView("Neutral", systemImageName: "info.circle")
-        InfoBadgeView("Fuel accent", systemImageName: "fuelpump.fill", style: .fuel)
-        InfoBadgeView("Charge accent", systemImageName: "bolt.fill", style: .charge)
-        InfoBadgeView("Positive", systemImageName: "checkmark.circle.fill", style: .positive)
-        InfoBadgeView("No icon", style: .neutral)
-    }
-    .padding()
-}

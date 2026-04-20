@@ -119,36 +119,3 @@ extension ViewStateView where T: Collection {
         self.loadedContent = loadedContent
     }
 }
-
-// MARK: - Previews
-
-#Preview("Loading") {
-    ViewStateView<[String], Text>(
-        state: .loading,
-        emptyMessage: "No items"
-    ) { items in
-        Text(items.joined(separator: ", "))
-    }
-    .padding()
-}
-
-#Preview("Empty") {
-    ViewStateView<[String], Text>(
-        state: .success([]),
-        emptyMessage: "No recent transactions"
-    ) { items in
-        Text(items.joined(separator: ", "))
-    }
-    .padding()
-}
-
-#Preview("Error") {
-    ViewStateView<[String], Text>(
-        state: .error(URLError(.notConnectedToInternet)),
-        emptyMessage: "No items",
-        onRetry: { print("retry tapped") }
-    ) { items in
-        Text(items.joined(separator: ", "))
-    }
-    .padding()
-}

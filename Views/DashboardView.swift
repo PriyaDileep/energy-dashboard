@@ -12,6 +12,7 @@ struct DashboardView: View {
     // MARK: - State
 
     @StateObject var viewModel: DashboardViewModel
+    let viewModelFactory: ViewModelFactory
 
     var body: some View {
         NavigationStack {
@@ -46,6 +47,19 @@ struct DashboardView: View {
                     .font(.title)
                     .navigationTitle(offer.tag)
             }
+            .navigationDestination(for: DashboardRoute.self) { route in
+                switch route {
+                case .allFuelTransactions:
+                    FuelTransactionsListView(
+                        viewModel: viewModelFactory.makeFuelTransactionsViewModel()
+                    )
+                case .allChargeSessions:
+                    ChargeSessionsListView(
+                        viewModel: viewModelFactory.makeChargeSessionsViewModel()
+                    )
+                }
+            }
+
         }
     }
 
@@ -128,10 +142,3 @@ struct DashboardView: View {
     }
 }
 
-// MARK: - Preview
-
-#Preview {
-    DashboardView(
-        viewModel: DashboardViewModel(dataService: DemoDataService())
-    )
-}

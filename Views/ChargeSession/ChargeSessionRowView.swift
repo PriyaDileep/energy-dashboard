@@ -5,10 +5,6 @@
 //  Created by Priyanka on 19/4/2026.
 //
 
-//
-//  ChargeSessionRowView.swift
-//  EnergyDashboard
-//
 
 import SwiftUI
 

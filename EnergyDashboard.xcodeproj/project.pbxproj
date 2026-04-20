@@ -46,6 +46,9 @@
 		99599C812F94E7E30057F3FF /* fuel_transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 99599C2F2F944D970057F3FF /* fuel_transactions.json */; };
 		99599C822F94E7E80057F3FF /* charge_sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 99599C312F944DBD0057F3FF /* charge_sessions.json */; };
 		99599C832F94E7ED0057F3FF /* store_offers.json in Resources */ = {isa = PBXBuildFile; fileRef = 99599C332F944DDC0057F3FF /* store_offers.json */; };
+		99599C9A2F95A1090057F3FF /* DashboardRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C992F95A1000057F3FF /* DashboardRoute.swift */; };
+		99599C9D2F95A1620057F3FF /* FuelTransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C9C2F95A1620057F3FF /* FuelTransactionsListView.swift */; };
+		99599CA02F95A28F0057F3FF /* ChargeSessionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99599C9F2F95A28F0057F3FF /* ChargeSessionsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,9 @@
 		99599C7B2F94D8E30057F3FF /* ChargeSessionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionRowView.swift; sourceTree = "<group>"; };
 		99599C7D2F94D9D80057F3FF /* ChargeSessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionDetailView.swift; sourceTree = "<group>"; };
 		99599C7F2F94DA980057F3FF /* StoreOffersModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreOffersModuleView.swift; sourceTree = "<group>"; };
+		99599C992F95A1000057F3FF /* DashboardRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRoute.swift; sourceTree = "<group>"; };
+		99599C9C2F95A1620057F3FF /* FuelTransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTransactionsListView.swift; sourceTree = "<group>"; };
+		99599C9F2F95A28F0057F3FF /* ChargeSessionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSessionsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -224,13 +230,9 @@
 		99599C182F9332690057F3FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				99599C9E2F95A2650057F3FF /* ChargeSession */,
+				99599C9B2F95A1340057F3FF /* FuelTransactions */,
 				99599C712F94CBBF0057F3FF /* DashboardView.swift */,
-				99599C732F94D2F70057F3FF /* FuelTransactionsModuleView.swift */,
-				99599C752F94D51B0057F3FF /* FuelTransactionRowView.swift */,
-				99599C772F94D6970057F3FF /* FuelTransactionDetailView.swift */,
-				99599C792F94D7E60057F3FF /* ChargeSessionsModuleView.swift */,
-				99599C7B2F94D8E30057F3FF /* ChargeSessionRowView.swift */,
-				99599C7D2F94D9D80057F3FF /* ChargeSessionDetailView.swift */,
 				99599C7F2F94DA980057F3FF /* StoreOffersModuleView.swift */,
 			);
 			path = Views;
@@ -249,6 +251,7 @@
 		99599C1C2F943DD70057F3FF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				99599C982F95A0EC0057F3FF /* Navigation */,
 				99599C482F9452EF0057F3FF /* DependencyContainer */,
 				99599C1F2F9441EE0057F3FF /* AppConstants.swift */,
 			);
@@ -316,6 +319,36 @@
 				99599C6C2F94C8E80057F3FF /* DateTileView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		99599C982F95A0EC0057F3FF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				99599C992F95A1000057F3FF /* DashboardRoute.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		99599C9B2F95A1340057F3FF /* FuelTransactions */ = {
+			isa = PBXGroup;
+			children = (
+				99599C732F94D2F70057F3FF /* FuelTransactionsModuleView.swift */,
+				99599C752F94D51B0057F3FF /* FuelTransactionRowView.swift */,
+				99599C772F94D6970057F3FF /* FuelTransactionDetailView.swift */,
+				99599C9C2F95A1620057F3FF /* FuelTransactionsListView.swift */,
+			);
+			path = FuelTransactions;
+			sourceTree = "<group>";
+		};
+		99599C9E2F95A2650057F3FF /* ChargeSession */ = {
+			isa = PBXGroup;
+			children = (
+				99599C792F94D7E60057F3FF /* ChargeSessionsModuleView.swift */,
+				99599C7B2F94D8E30057F3FF /* ChargeSessionRowView.swift */,
+				99599C7D2F94D9D80057F3FF /* ChargeSessionDetailView.swift */,
+				99599C9F2F95A28F0057F3FF /* ChargeSessionsListView.swift */,
+			);
+			path = ChargeSession;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,6 +505,7 @@
 				99599C502F94599B0057F3FF /* FuelTransactionsViewModel.swift in Sources */,
 				99599C7C2F94D8E30057F3FF /* ChargeSessionRowView.swift in Sources */,
 				99599C402F94503D0057F3FF /* FuelTransaction+Formatting.swift in Sources */,
+				99599C9A2F95A1090057F3FF /* DashboardRoute.swift in Sources */,
 				99599C362F944E860057F3FF /* JSONMockLoader.swift in Sources */,
 				99599C632F9466410057F3FF /* ModuleCardView.swift in Sources */,
 				99599C3D2F94502D0057F3FF /* FuelTransaction.swift in Sources */,
@@ -479,6 +513,7 @@
 				99599C4C2F94540C0057F3FF /* ViewModelFactory.swift in Sources */,
 				99599C782F94D6970057F3FF /* FuelTransactionDetailView.swift in Sources */,
 				99599C582F945C5C0057F3FF /* StoreOffersViewModel.swift in Sources */,
+				99599C9D2F95A1620057F3FF /* FuelTransactionsListView.swift in Sources */,
 				99599C4A2F94530A0057F3FF /* ServiceFactory.swift in Sources */,
 				99599C472F94514E0057F3FF /* MockDataService.swift in Sources */,
 				99599C4E2F9457300057F3FF /* DashboardViewModel.swift in Sources */,
@@ -499,6 +534,7 @@
 				99599C7A2F94D7E60057F3FF /* ChargeSessionsModuleView.swift in Sources */,
 				99599C372F944EEA0057F3FF /* AppConstants.swift in Sources */,
 				99599C672F94694E0057F3FF /* ViewStateView.swift in Sources */,
+				99599CA02F95A28F0057F3FF /* ChargeSessionsListView.swift in Sources */,
 				99599C652F94680A0057F3FF /* AppTextStyles.swift in Sources */,
 				99599C3E2F9450330057F3FF /* ChargeSession.swift in Sources */,
 			);

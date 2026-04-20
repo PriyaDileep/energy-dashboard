@@ -81,10 +81,8 @@ struct ChargeSessionsModuleView: View {
     }
 
     private var viewAllFooter: some View {
-        Button {
-            // Navigation to full list,  out of scope for this
-        } label: {
-            Text(AppConstants.Strings.viewAllSessions)
+        NavigationLink(value: DashboardRoute.allFuelTransactions) {
+            Text(AppConstants.Strings.viewAllTransactions)
                 .font(.system(size: 14, weight: .medium))
                 .foregroundStyle(Color.accentColor)
                 .frame(maxWidth: .infinity)

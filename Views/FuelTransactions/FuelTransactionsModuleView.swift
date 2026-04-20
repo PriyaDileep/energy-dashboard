@@ -79,8 +79,7 @@ struct FuelTransactionsModuleView: View {
     }
 
     private var viewAllFooter: some View {
-        Button {
-        } label: {
+        NavigationLink(value: DashboardRoute.allFuelTransactions) {
             Text(AppConstants.Strings.viewAllTransactions)
                 .font(.system(size: 14, weight: .medium))
                 .foregroundStyle(Color.accentColor)

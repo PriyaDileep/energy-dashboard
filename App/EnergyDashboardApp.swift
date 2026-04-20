@@ -20,7 +20,10 @@ struct EnergyDashboardApp: App {
     
     var body: some Scene {
         WindowGroup {
-            DashboardView(viewModel: viewModelFactory.makeDashboardViewModel())
+            DashboardView(
+                viewModel: viewModelFactory.makeDashboardViewModel(),
+                viewModelFactory: viewModelFactory
+            )
         }
     }
     
