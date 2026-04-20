@@ -26,7 +26,6 @@ struct ViewStateView<T, LoadedContent: View>: View {
     var body: some View {
         switch state {
         case .idle:
-            // Idle is treated as loading visually — we haven't asked the user to do anything.
             loadingView
 
         case .loading:
@@ -47,14 +46,10 @@ struct ViewStateView<T, LoadedContent: View>: View {
     // MARK: - States
 
     private var loadingView: some View {
-        HStack {
-            ProgressView()
-                .controlSize(.regular)
-            Spacer()
-        }
-        .padding(.vertical, 32)
-        .padding(.horizontal, AppConstants.Layout.cardPadding)
-        .frame(maxWidth: .infinity, alignment: .center)
+        ProgressView()
+            .controlSize(.regular)
+            .padding(.vertical, 32)
+            .frame(maxWidth: .infinity, alignment: .center)
     }
 
     private var emptyView: some View {
@@ -105,7 +100,6 @@ struct ViewStateView<T, LoadedContent: View>: View {
 
 extension ViewStateView where T: Collection {
 
-    /// Convenience init for collection types — `isEmpty` defaults to `\.isEmpty`.
     init(
         state: ViewState<T>,
         emptyMessage: String,
