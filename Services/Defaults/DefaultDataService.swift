@@ -46,25 +46,6 @@ struct DefaultDataService: DataServiceProtocol {
         fatalError("Not implemented — use DemoDataService for this submission.")
     }
 
-    // MARK: - Production networking shape (illustrative)
-
-    /// The shape a real implementation would take.
-    /// Left here as a comment-friendly reference to show architectural intent
-    /// without actually executing network calls in a demo submission.
-    ///
-    /// ```
-    /// private func get<T: Decodable>(path: String) async throws -> T {
-    ///     let url = baseURL.appendingPathComponent(path)
-    ///     let (data, response) = try await session.data(from: url)
-    ///
-    ///     guard let http = response as? HTTPURLResponse,
-    ///           (200..<300).contains(http.statusCode) else {
-    ///         throw URLError(.badServerResponse)
-    ///     }
-    ///
-    ///     return try decoder.decode(T.self, from: data)
-    /// }
-    /// ```
     private func notImplemented() -> Never {
         fatalError("DefaultDataService is a production placeholder — not implemented.")
     }

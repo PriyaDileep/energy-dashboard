@@ -5,11 +5,6 @@
 //  Created by Priyanka on 19/4/2026.
 //
 
-//
-//  DashboardViewModelTests.swift
-//  EnergyDashboardTests
-//
-
 import XCTest
 @testable import EnergyDashboard
 

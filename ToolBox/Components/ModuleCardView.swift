@@ -36,8 +36,6 @@ struct ModuleCardView<Header: View, Content: View, Footer: View>: View {
 
 extension ModuleCardView where Footer == EmptyView {
 
-    /// Creates a module card without a footer slot.
-    /// Callers that don't need a "View all" row can omit the closure entirely.
     init(
         @ViewBuilder header: @escaping () -> Header,
         @ViewBuilder content: @escaping () -> Content
